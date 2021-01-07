@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --var-morado:#582a68;
+    --var-celeste:#1bc5c8;
+    --var-amarillo:#ffd838;
+}
+/*NAVBAR*/
+header{
+    width:100%;
+    position: fixed;
+    z-index: 1;
+}
+.fuente{
+    font-family: 'Yellowtail', cursive;
+    padding: 0px 20px 0px 0px;
+    border-right: 1px solid #ccc;
+}
+
+
+.redes_sociales_1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.redes_1 li a{
+    margin: 5px 10px 5px 10px;
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+    font-size: 13px;
+}
+.redes_sociales_1 ul li a:hover{
+    color: black;
+    transition: .5s;
+}
+/*FIN DE NAVBAR*/
+/*CONTENEDOR DE FONDO*/
+.content_fondo{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content_fondo {
+    background-image: url(imagenes/morado.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+.texto{
+    text-align: center;
+    width: 100%;
+    
+}
+.texto h3{
+    color: var(--var-morado);
+    font-size: 30px;
+}
+/*CONTENEDOR DE FONDO*/
+
+
+
+/*CONTENEDOR CONTENIDO*/
+.img_bolas{
+    background-image: url(imagenes/estrellas.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.content_titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0px 0% 0%;
+    
+
+}
+
+.content_info{
+    display: flex;
+    padding: 10% 0% 5% 0%;
+    
+}
+.cajon{
+    margin: 0 20px;
+    text-align: center;
+    
+
+}
+
+.cajon i{
+    font-size: 30px;
+    color: var(--var-morado);
+    background-color: var(--var-amarillo);
+    padding:20px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 4px #ccc;
+  
+
+}
+.cajon h5{
+    margin-top: 30px;
+}
+
+/*CONTENEDOR CONTENIDO*/
+
+/*BLOQUE RESPONSIVE*/
+.bloque_reponsive{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.reponsive{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+    
+}
+
+.logos_reponsive{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    
+}
+.texto_reponsive{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0px 0px 0px;
+}
+
+
+/*BLOQUE RESPONSIVE FIN*/
+
+/*CONTENEDOR SOBRE MI*/
+
+
+.contenedor_ronaldo{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+    
+
+}
+.contenedor_ronaldo h4{
+    font-family: 'Yellowtail', cursive;
+    padding: 10px;
+    position: relative;
+   
+}
+
+.sobre_mi{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-right: 40px;
+    
+    
+   
+}
+.redes_sociales ul{
+    display: flex;
+    align-items: center;
+    line-height: 60px;
+}
+.redes_sociales ul li{
+    margin: 0 10px;
+}
+.redes_sociales ul li a{
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+}
+.redes_sociales ul li a:hover{
+    color: black;
+    transition: .5s;
+}
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+    border-left: 1px solid #ccc;
+   
+}
+.subtitulos{
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    
+}
+.subtitulos:hover{
+    border-left: 5px solid var(--var-morado);
+    transition: .2s;
+}
+.banderas{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+
+.banda{
+    font-size: 13px;
+    border-radius: 5px;
+    padding:0 10px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0px 1px 2px black;
+}
+.buno{
+    background-color: var(--var-morado);
+    
+}
+.bdos{
+    background-color: var(--var-celeste);
+}
+.btres{
+    background-color: var(--var-amarillo);
+}
+
+.lenguajes{
+    margin: 20px;
+    
+}
+.programacion{
+    background-color: rgb(240, 240, 240);
+    display: block;
+    margin-top: 5px;
+    padding:5px;
+    color: black;font-family: 'Staatliches', cursive;
+}
+.programacion::after{
+    content: '';
+    height: 15px;
+    margin: 5px 20px 5px 20px;
+    position: absolute;
+    background-color: var(--var-morado);
+   
+    
+}
+.programacion:hover{
+    background-color: gainsboro;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.php::after{
+    width: 10%;
+}
+.php:hover:after{
+    background-color: #9a2da8;
+    transition: .4s;
+    cursor: pointer;
+}
+.js::after{
+    width: 5%;
+}
+.js:hover:after{
+    background-color: #9a2da8;
+    transition: .4s;
+    cursor: pointer;
+}
+.html::after{
+    width: 15%;
+}
+.html:hover:after{
+    background-color: #9a2da8;
+    transition: .4s;
+    cursor: pointer;
+}
+.css::after{
+    width: 15%;
+}
+.css:hover:after{
+    background-color: #9a2da8;
+    transition: .4s;
+    cursor: pointer;
+}
+.photo::after{
+    width: 8%;
+}
+.photo:hover:after{
+    background-color: #9a2da8;
+    transition: .4s;
+    cursor: pointer;
+}
+.experiencia{
+    margin: 20px;
+    text-align: justify;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+}
+
+
+/*CONTENEDOR SOBRE MI*/
+
+/*FOOOTER*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px 5px 30px;
+    width: 100%;
+    border-top:1px solid rgb(231, 231, 231);
+}
+footer ul{
+    display: flex;
+
+}
+.letra{
+    font-family: 'Yellowtail', cursive;
+}
+footer ul li a{
+    margin: 0 10px;
+    font-size: 13px;
+}
+/*FOOTER FIN*/
+
+
+@media screen and (max-width: 800px){
+    /*navbar*/
+    
+    .fuente{
+        border: none;
+    }
+    
+    /*navbar*/
+
+    /*FONDO*/
+    
+    /*FONDO*/
+
+    /*CONTENEDOR DE BOLAS(SERVICE)*/
+    .content_titulo .texttitle{
+        border-bottom: 1px solid #ccc;
+        padding: 5px 0px 10px 0px;
+        margin: 20px 10px 20px 10px;
+        text-align: center;
+    }
+
+    
+    .content_info{
+        flex-direction: column;
+        
+    }
+    .cajon{
+        margin: 20px 10px 20px 10px;
+    }
+    .img_bolas{
+        height: auto;
+    }
+    /*CONTENEDOR DE BOLAS(SERVICE) FIN*/
+
+    /*CONTENEDOR SOBRE MI*/
+    .contenedor_ronaldo{
+        flex-direction: column;
+    }
+    .sobre_mi{
+        flex-direction: column;
+        margin:auto;
+        width: 100%;
+        
+        
+    }
+    .habilidades{
+        border: none;
+        padding: 10px;
+    }
+    .subtitulos{
+        text-align: center;
+    }
+    
+    /*CONTENDOR SOBRE MI FIN*/
+    /*FOOTER*/
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer h4{
+        order: -1;
+        border-bottom: 1px solid rgb(228, 228, 228);
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0px 10px 0px;
+    }
+    /*FIN FOOTER*/
+}
